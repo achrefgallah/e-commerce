@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 
 
 const connectDatabase = () => {
-    mongoose.connect(process.env.DB_LOCAL_URL,{}).then(() => {console.log('connectid');});
+    mongoose.connect(`${process.env.DB_LOCAL_URI}`,{}).then(() => {console.log('connectid');});
 }
 
 
